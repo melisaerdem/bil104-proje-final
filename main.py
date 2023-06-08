@@ -41,3 +41,7 @@ df.fillna(0, inplace=True)
 grouped = df.groupby('Sektör')[['Tecrübe', 'Maaş']].mean()
 print("\n---- Gruplanmış Veriler ----")
 print(grouped)
+#####Maaşı 15000 TL üzerinde olanların toplam sayısını bul####
+maas_ustundeki = df[df['Maaş'] > 15000]
+toplam_sayi = len(maas_ustundeki)
+print("\nMaaşı 15000 TL üzerinde olanların toplam sayısı:", toplam_sayi)
