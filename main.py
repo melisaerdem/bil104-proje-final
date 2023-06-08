@@ -49,3 +49,7 @@ print("\nMaaşı 15000 TL üzerinde olanların toplam sayısı:", toplam_sayi)
 siralama = df.sort_values(by='Maaş')
 print("\n---- Sıralanmış DataFrame ----")
 print(siralama)
+######Tecrübesi 3 seneden fazla olan beyaz yakalıları bul ve yazdır####
+tecrube_ustundeki = df[(df['Sektör'] == 'Beyaz Yaka') & (df['Tecrübe'] > 3)]
+print("\n---- 3 Yıldan Fazla Tecrübesi Olan Beyaz Yakalılar ----")
+print(tecrube_ustundeki)
