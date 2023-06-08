@@ -41,3 +41,5 @@ class Insan:
     
     def set_uyruk(self, uyruk):
         self.__uyruk = uyruk
+    def __str__(self):
+        return f"Ad: {self.__ad}\nSoyad: {self.__soyad}\nT.C. No: {self.__tc_no}\nYaş: {self.__yas}\nCinsiyet: {self.__cinsiyet}\nUyruk: {self.__uyruk}"
