@@ -8,3 +8,18 @@ class MaviYaka(Calisan):
     
     def set_yipranma_payi(self, yipranma_payi):
         self.__yipranma_payi = yipranma_payi
+    def zam_hakki(self):
+        try:
+            tecrube_yil = self.get_tecrube() / 12
+            maas_oran = self.get_maas() / tecrube_yil
+            
+            if tecrube_yil < 2:
+                return self.get_maas() + (self.__yipranma_payi * 10)
+            elif tecrube_yil >= 2 and tecrube_yil <= 4 and self.get_maas() < 15000:
+                return (self.get_maas() / tecrube_yil) / 2 + (self.__yipranma_payi * 10)
+            elif tecrube_yil > 4 and self.get_maas() < 25000:
+                return (self.get_maas() / tecrube_yil) / 3 + (self.__yipranma_payi * 10)
+            else:
+                return self.get_maas()
+        except:
+            return self.get_maas()
