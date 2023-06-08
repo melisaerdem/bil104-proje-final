@@ -30,3 +30,6 @@ class Issiz(Insan):
                 return 'yonetici'
         except:
             return ''
+    def __str__(self):
+        statu = self.statu_bul()
+        return super().__str__() + f"\nEn Uygun Statü: {statu}"    
