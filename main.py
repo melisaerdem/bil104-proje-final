@@ -14,3 +14,9 @@ issiz3 = Issiz("45678912345", "Mehmet", "Kara", 35, "Erkek", "Türk", {"mavi yak
 # Calisan sınıfı için 2 nesne oluşturulması
 calisan1 = Calisan("12345678901", "Ali", "Yılmaz", 30, "Erkek", "Türk", "Bilişim", 24, 12000)
 calisan2 = Calisan("98765432109", "Ayşe", "Demir", 25, "Kadın", "Türk", "Pazarlama", 36, 18000)
+# MaviYaka sınıfı için 2 nesne oluşturulması
+mavi_yaka1 = MaviYaka("12345678901", "Ali", "Yılmaz", 30, "Erkek", "Türk", "Bilişim", 24, 12000, 500)
+mavi_yaka2 = MaviYaka("98765432109", "Ayşe", "Demir", 25, "Kadın", "Türk", "Pazarlama", 36, 18000, 800)
+# BeyazYaka sınıfı için 2 nesne oluşturulması
+beyaz_yaka1 = BeyazYaka("12345678901", "Ali", "Yılmaz", 30, "Erkek", "Türk", "Bilişim", 24, 12000, 1000)
+beyaz_yaka2 = BeyazYaka("98765432109", "Ayşe", "Demir", 25, "Kadın", "Türk", "Pazarlama", 36, 18000, 1500)
