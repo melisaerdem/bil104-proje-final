@@ -22,3 +22,7 @@ class Calisan(Insan):
     
     def set_maas(self, maas):
         self.__maas = maas
+    def zam_hakki(self):
+        try:
+            tecrube_yil = self.__tecrube / 12
+            maas_oran = self.__maas / tecrube_yil
