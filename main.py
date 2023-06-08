@@ -27,3 +27,10 @@ data = [
     [issiz1.get_tc_no(), issiz1.get_ad(), issiz1.get_soyad(), issiz1.get_yas(), issiz1.get_cinsiyet(), issiz1.get_uyruk()],
     [issiz2.get_tc_no(), issiz2.get_ad(), issiz2.get_soyad(), issiz2.get_yas(), issiz2.get_cinsiyet(), issiz2.get_uyruk()],
     [issiz3.get_tc_no(), issiz3.get_ad(), issiz3.get_soyad(), issiz3.get_yas(), issiz3.get_cinsiyet(), issiz3.get_uyruk()],
+    [calisan1.get_tc_no(), calisan1.get_ad(), calisan1.get_soyad(), calisan1.get_yas(), calisan1.get_cinsiyet(), calisan1.get_uyruk(), calisan1.get_sektor(), calisan1.get_tecrube(), calisan1.get_maas()],
+    [calisan2.get_tc_no(), calisan2.get_ad(), calisan2.get_soyad(), calisan2.get_yas(), calisan2.get_cinsiyet(), calisan2.get_uyruk(), calisan2.get_sektor(), calisan2.get_tecrube(), calisan2.get_maas()],
+    [mavi_yaka1.get_tc_no(), mavi_yaka1.get_ad(), mavi_yaka1.get_soyad(), mavi_yaka1.get_yas(), mavi_yaka1.get_cinsiyet(), mavi_yaka1.get_uyruk(), mavi_yaka1.get_sektor(), mavi_yaka1.get_tecrube(), mavi_yaka1.get_maas(), mavi_yaka1.get_yipranma_payi()],
+    [mavi_yaka2.get_tc_no(), mavi_yaka2.get_ad(), mavi_yaka2.get_soyad(), mavi_yaka2.get_yas(), mavi_yaka2.get_cinsiyet(), mavi_yaka2.get_uyruk(), mavi_yaka2.get_sektor(), mavi_yaka2.get_tecrube(), mavi_yaka2.get_maas(), mavi_yaka2.get_yipranma_payi()],
+    [beyaz_yaka1.get_tc_no(), beyaz_yaka1.get_ad(), beyaz_yaka1.get_soyad(), beyaz_yaka1.get_yas(), beyaz_yaka1.get_cinsiyet(), beyaz_yaka1.get_uyruk(), beyaz_yaka1.get_sektor(), beyaz_yaka1.get_tecrube(), beyaz_yaka1.get_maas(), beyaz_yaka1.get_tesvik_primi()],
+    [beyaz_yaka2.get_tc_no(), beyaz_yaka2.get_ad(), beyaz_yaka2.get_soyad(), beyaz_yaka2.get_yas(), beyaz_yaka2.get_cinsiyet(), beyaz_yaka2.get_uyruk(), beyaz_yaka2.get_sektor(), beyaz_yaka2.get_tecrube(), beyaz_yaka2.get_maas(), beyaz_yaka2.get_tesvik_primi()]
+]
