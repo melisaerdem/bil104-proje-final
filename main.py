@@ -34,3 +34,5 @@ data = [
     [beyaz_yaka1.get_tc_no(), beyaz_yaka1.get_ad(), beyaz_yaka1.get_soyad(), beyaz_yaka1.get_yas(), beyaz_yaka1.get_cinsiyet(), beyaz_yaka1.get_uyruk(), beyaz_yaka1.get_sektor(), beyaz_yaka1.get_tecrube(), beyaz_yaka1.get_maas(), beyaz_yaka1.get_tesvik_primi()],
     [beyaz_yaka2.get_tc_no(), beyaz_yaka2.get_ad(), beyaz_yaka2.get_soyad(), beyaz_yaka2.get_yas(), beyaz_yaka2.get_cinsiyet(), beyaz_yaka2.get_uyruk(), beyaz_yaka2.get_sektor(), beyaz_yaka2.get_tecrube(), beyaz_yaka2.get_maas(), beyaz_yaka2.get_tesvik_primi()]
 ]
+columns = ['TC No', 'Ad', 'Soyad', 'Yaş', 'Cinsiyet', 'Uyruk', 'Sektör', 'Tecrübe', 'Maaş', 'Yıpranma Payı/Tesvik Prim','Yeni Maaş']
+df = pd.DataFrame(data, columns=columns)
