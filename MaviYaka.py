@@ -23,3 +23,6 @@ class MaviYaka(Calisan):
                 return self.get_maas()
         except:
             return self.get_maas()
+    def __str__(self):
+        yeni_maas = self.zam_hakki()
+        return super().__str__() + f"\nYıpranma Payı: {self.__yipranma_payi}\nYeni Maaş: {yeni_maas}"
