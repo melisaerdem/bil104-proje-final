@@ -36,3 +36,6 @@ class Calisan(Insan):
                 return self.__maas
         except:
             return self.__maas
+    def __str__(self):
+        yeni_maas = self.zam_hakki()
+        return super().__str__() + f"\nSektör: {self.__sektor}\nTecrübe: {self.__tecrube} ay\nYeni Maaş: {yeni_maas}"
