@@ -8,3 +8,25 @@ class Issiz(Insan):
     
     def set_statuler(self, statuler):
         self.__statuler = statuler
+    def statu_bul(self):
+        try:
+            mavi_yaka_etkisi = self.__statuler.get('mavi yaka', 0)
+            beyaz_yaka_etkisi = self.__statuler.get('beyaz yaka', 0)
+            yonetici_etkisi = self.__statuler.get('yonetici', 0)
+            
+            mavi_yaka_oran = 0.2
+            beyaz_yaka_oran = 0.35
+            yonetici_oran = 0.45
+            
+            en_uygun_statu = max(mavi_yaka_etkisi * mavi_yaka_oran,
+                                 beyaz_yaka_etkisi * beyaz_yaka_oran,
+                                 yonetici_etkisi * yonetici_oran)
+            
+            if en_uygun_statu == mavi_yaka_etkisi * mavi_yaka_oran:
+                return 'mavi yaka'
+            elif en_uygun_statu == beyaz_yaka_etkisi * beyaz_yaka_oran:
+                return 'beyaz yaka'
+            else:
+                return 'yonetici'
+        except:
+            return ''
