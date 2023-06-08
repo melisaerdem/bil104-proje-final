@@ -53,3 +53,7 @@ print(siralama)
 tecrube_ustundeki = df[(df['Sektör'] == 'Beyaz Yaka') & (df['Tecrübe'] > 3)]
 print("\n---- 3 Yıldan Fazla Tecrübesi Olan Beyaz Yakalılar ----")
 print(tecrube_ustundeki)
+#####Yeni maaşı 10000 TL üzerinde olanlar için 2-5 satır arası olanları tc_no ve yeni_maaş sütunlarını seçerek gösterip yazdır#####
+yeni_maas_ustundeki = df[df['Yıpranma Payı/Tesvik Prim'] > 10000].iloc[1:5, [0, 9]]
+print("\n---- Yeni Maaşı 10000 TL Üzerinde Olanlar ----")
+print(yeni_maas_ustundeki)
