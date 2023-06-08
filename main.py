@@ -57,3 +57,7 @@ print(tecrube_ustundeki)
 yeni_maas_ustundeki = df[df['Yıpranma Payı/Tesvik Prim'] > 10000].iloc[1:5, [0, 9]]
 print("\n---- Yeni Maaşı 10000 TL Üzerinde Olanlar ----")
 print(yeni_maas_ustundeki)
+######Var olan DataFrame'den ad, soyad, sektör ve yeni maaşı içeren yeni bir DataFrame elde edelim ve yazdır####
+yeni_dataframe = df[['Ad', 'Soyad', 'Sektör', 'Yeni Maaş']]
+print("\n---- Yeni DataFrame ----")
+print(yeni_dataframe)
