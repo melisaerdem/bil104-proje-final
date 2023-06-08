@@ -37,3 +37,7 @@ data = [
 columns = ['TC No', 'Ad', 'Soyad', 'Yaş', 'Cinsiyet', 'Uyruk', 'Sektör', 'Tecrübe', 'Maaş', 'Yıpranma Payı/Tesvik Prim','Yeni Maaş']
 df = pd.DataFrame(data, columns=columns)
 df.fillna(0, inplace=True)
+#Çalışan,mavi yaka ve beyaz yaka için gruplandırarak tecrübe ve yeni maaş ortalamalarını her grup için yazdır#
+grouped = df.groupby('Sektör')[['Tecrübe', 'Maaş']].mean()
+print("\n---- Gruplanmış Veriler ----")
+print(grouped)
