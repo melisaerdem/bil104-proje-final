@@ -26,3 +26,13 @@ class Calisan(Insan):
         try:
             tecrube_yil = self.__tecrube / 12
             maas_oran = self.__maas / tecrube_yil
+            if tecrube_yil < 2:
+                return self.__maas
+            elif tecrube_yil >= 2 and tecrube_yil <= 4 and self.__maas < 15000:
+                return (self.__maas / tecrube_yil)
+            elif tecrube_yil > 4 and self.__maas < 25000:
+                return (self.__maas / tecrube_yil) / 2
+            else:
+                return self.__maas
+        except:
+            return self.__maas
